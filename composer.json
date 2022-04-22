@@ -1,0 +1,18 @@
+{
+    "name": "liererkt/my-first-package",
+    "description": "This is my first package!",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Liererkt\\MyFirstPackage\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Kyle Lierer",
+            "email": "liererkt@miamioh.edu"
+        }
+    ],
+    "require": {}
+}
