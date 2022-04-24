@@ -5,14 +5,22 @@
 Creating a composer package is a straightforward and simple process. In this tutorial, we will be creating a simple composer package and deploying it to [Packagist](https://packagist.org/).
 
 ## Table of Contents
-- [Create Accounts](#create-accounts)
-- [Initialize Your Package](#initialize-your-package)
-- [File Structure Explained](#file-structure-explained)
-- [Writing our Package's Code](#writing-our-packages-code)
-- [Setting Up the Package Repository](#setting-up-the-package-repository)
-- [Submit the Package to Packagist](#submit-the-package-to-packagist)
+- [Part 1 - Basics](#part-1---basics)
+  - [Create Accounts](#create-accounts)
+  - [Initialize Your Package](#initialize-your-package)
+  - [File Structure Explained](#file-structure-explained)
+  - [Writing our Package's Code](#writing-our-packages-code)
+  - [Setting Up the Package Repository](#setting-up-the-package-repository)
+  - [Submit the Package to Packagist](#submit-the-package-to-packagist)
+- [Part 2 - A more advanced package](#part-2---a-more-advanced-package)
+  - [Objective](#objective)
+  - [Class Diagram](#class-diagram)
+  - [Key Challenges](#key-challenges)
 
-# Create Accounts
+
+# Part 1 - Basics
+
+## Create Accounts
 
 Packagist is the main Composer repository for PHP packages. It aggregates all public PHP packages that are installable with Composer.
 
@@ -27,7 +35,7 @@ After that, create a Packagist account at [https://packagist.org/](https://packa
 *Note: Keep track of your Packagist username, it will be used in the next step.*
 
 
-# Initialize Your Package
+## Initialize Your Package
 
 It is time to start creating out package. To create package, you need to setup your package directory and initialize your package with a `composer.json` file. The` composer.json` is the file where your packge information is stored. To do that, you can run he following commands.
 
@@ -92,7 +100,7 @@ Include the Composer autoloader with: require 'vendor/autoload.php';
 </details>
 
 
-# File Structure Explained
+## File Structure Explained
 
 Before diving into the actual code, let's take a look at the file structure of our package. The file structure is as follows:
 
@@ -108,7 +116,7 @@ composer.json
 * `src/`: This is where our code is stored.
 * `composer.json`: This is where our package information is stored.
 
-# Writing our Package's Code
+## Writing our Package's Code
 
 Now that we have our package directory and our `composer.json` file, we can start writing our code. We will start by creating a `src/Hello.php` file. This will serve as the entry point for our package. 
 
@@ -148,7 +156,7 @@ class Hello
 ?>
 ```
 
-# Setting Up the Package Repository
+## Setting Up the Package Repository
 
 In order to deploy our package, we will make use a GitHub repository. We will use the GitHub API and a webhook to trigger our package to be deployed. First, make a new empty GitHub repository with no files.
 
@@ -172,7 +180,7 @@ git branch -M main
 git push -u origin main
 ```
 
-# Submit the Package to Packagist
+## Submit the Package to Packagist
 
 Now that we have the package ready, we can submit it to Packagist.
 
@@ -183,3 +191,24 @@ Now that we have the package ready, we can submit it to Packagist.
 3. Fill out the form with your GitHub repository URL and click on the "Submit" button.
 
 4. Congratulations! Your package is now available on Packagist and will update when you push to your GitHub repository.
+
+
+# Part 2 - A more advanced package
+
+While we have a simple package created, we can do a lot more with it. For the sake of this tutorial, we will modify our existing package to be a simple PHP wrapper for the OpenWeatherAPI. 
+
+## Objective
+
+Create a PHP wrapper for the OpenWeatherAPI that has the following features:
+- [ ] A client that can be used to make `getCurrentWeather` requests to the OpenWeatherAPI.
+- [ ] Model classes for OpenWeather request/response objects.
+
+## Class Diagram
+![Class Diagram](assets/Package-Diagram.svg)
+
+## Key Challenges
+
+- [ ] Adding a Guzzle/HTTP client to our package
+- [ ] Determining how to handle the API key
+- [ ] How to handle multiple classes in a single package
+- [ ] How to handle error handling
