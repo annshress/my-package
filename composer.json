@@ -14,5 +14,7 @@
             "email": "liererkt@miamioh.edu"
         }
     ],
-    "require": {}
+    "require": {
+        "guzzlehttp/guzzle": "^7.4"
+    }
 }
