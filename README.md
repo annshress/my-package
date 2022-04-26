@@ -191,6 +191,8 @@ Now that we have the package ready, we can submit it to Packagist.
 3. Fill out the form with your GitHub repository URL and click on the "Submit" button.
 
 4. Congratulations! Your package is now available on Packagist and will update when you push to your GitHub repository.
+  
+*Note: Packagist determines the stability of your package based on the GIT tag. By default it will be dev. Thus, to require it, you'll need to specify the branch and dev like: `composer require liererkt/my-first-package:dev-main`. For instance, the command `git tag v1.0.0` will mark your branch as stable.*
 
 
 # Part 2 - A more advanced package
