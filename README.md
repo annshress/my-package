@@ -5,20 +5,20 @@
 Creating a composer package is a straightforward and simple process. In this tutorial, we will be creating a simple composer package and deploying it to [Packagist](https://packagist.org/).
 
 ## Table of Contents
-- [Part 1 - Basics](#part-1---basics)
+- [Intro - Basics of Making a Package](#intro---basics-of-making-a-package)
   - [Create Accounts](#create-accounts)
   - [Initialize Your Package](#initialize-your-package)
   - [File Structure Explained](#file-structure-explained)
   - [Writing our Package's Code](#writing-our-packages-code)
   - [Setting Up the Package Repository](#setting-up-the-package-repository)
   - [Submit the Package to Packagist](#submit-the-package-to-packagist)
-- [Part 2 - A more advanced package](#part-2---a-more-advanced-package)
-  - [Objective](#objective)
+- [Assignment - Build Your Own Package](#assignment---build-your-own-package)
+  - [Requirements](#requirements)
   - [Class Diagram](#class-diagram)
   - [Key Challenges](#key-challenges)
 
 
-# Part 1 - Basics
+# Intro - Basics of Making a Package
 
 ## Create Accounts
 
@@ -195,15 +195,24 @@ Now that we have the package ready, we can submit it to Packagist.
 *Note: Packagist determines the stability of your package based on the GIT tag. By default it will be dev. Thus, to require it, you'll need to specify the branch and dev like: `composer require liererkt/my-first-package:dev-main`. For instance, the command `git tag v1.0.0` will mark your branch as stable.*
 
 
-# Part 2 - A more advanced package
+# Assignment - Build Your Own Package
 
-While we have a simple package created, we can do a lot more with it. For the sake of this tutorial, we will modify our existing package to be a simple PHP wrapper for the OpenWeatherAPI. 
+While we have a simple package created, we can do a lot more with it. For the sake of this tutorial, we will modify our existing package to be a simple PHP wrapper for the OpenWeatherAPI. Based on the following requirements, create your own more complex package.
 
-## Objective
+## Requirements
 
 Create a PHP wrapper for the OpenWeatherAPI that has the following features:
 - [ ] A client that can be used to make `getCurrentWeather` requests to the OpenWeatherAPI.
 - [ ] Model classes for OpenWeather request/response objects.
+  - [ ] WeatherDay
+  - [ ] Location
+
+By the end of the assignment, you should have three classes (or similar classes):
+ * OpenWeatherClient
+ * WeatherDay
+ * Location
+
+*Note, it is recommended to follow the class diagram below (though this is not required)*
 
 ## Class Diagram
 ![Class Diagram](assets/Package-Diagram.svg)
