@@ -1,11 +1,11 @@
 {
-    "name": "liererkt/my-first-package",
-    "description": "This is my first package!",
+    "name": "liererkt/open-weather-client",
+    "description": "A client wrapper for the OpenWeather API.",
     "type": "project",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Liererkt\\MyFirstPackage\\": "src/"
+            "Liererkt\\OpenWeatherClient\\": "src/"
         }
     },
     "authors": [

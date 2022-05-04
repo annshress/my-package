@@ -7,7 +7,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace liererkt\MyFirstPackage;
+namespace liererkt\OpenWeatherClient;
 
 class WeatherDay
 {
