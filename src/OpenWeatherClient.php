@@ -7,7 +7,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace liererkt\MyFirstPackage;
+namespace liererkt\OpenWeatherClient;
 
 class OpenWeatherClient
 {
@@ -37,7 +37,7 @@ class OpenWeatherClient
 
         $data = json_decode($response->getBody(), true);
 
-        return new \Liererkt\MyFirstPackage\WeatherDay(
+        return new \Liererkt\OpenWeatherClient\WeatherDay(
             new \DateTime('now'),
             $location,
             'imperial',
