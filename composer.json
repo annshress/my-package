@@ -1,17 +1,21 @@
 {
-    "name": "liererkt/open-weather-client",
+    "name": "annshress/weatherPackage",
     "description": "A client wrapper for the OpenWeather API.",
     "type": "project",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Liererkt\\OpenWeatherClient\\": "src/"
+            "Annshress\\WeatherPackage\\": "src/"
         }
     },
     "authors": [
         {
             "name": "Kyle Lierer",
             "email": "liererkt@miamioh.edu"
+        },
+        {
+            "name": "Anish Shrestha",
+            "email": "shresta3@miamioh.edu"
         }
     ],
     "require": {
