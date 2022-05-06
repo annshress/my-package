@@ -1,13 +1,7 @@
-<?php 
+<?php
 
-/*
- * (c) Kyle Lierer <liererkt@miamioh.edu>
- *
- * This source file is subject to the MIT license that is bundled
- * with this source code in the file LICENSE.
- */
 
-namespace liererkt\OpenWeatherClient;
+namespace annshress\OpenWeatherClient;
 
 class OpenWeatherClient
 {
