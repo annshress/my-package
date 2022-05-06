@@ -1,5 +1,5 @@
 {
-    "name": "annshress/weatherPackage",
+    "name": "annshress/weather-package",
     "description": "A client wrapper for the OpenWeather API.",
     "type": "project",
     "license": "MIT",
